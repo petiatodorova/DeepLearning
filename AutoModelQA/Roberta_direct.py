@@ -1,4 +1,9 @@
+import os
+import tensorflow as tf
 from transformers import AutoModelForQuestionAnswering, AutoTokenizer
+
+# Turn off oneDNN optimizations
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
 # Load model and tokenizer
 model_name = "rmihaylov/bert-base-squad-theseus-bg"
@@ -6,7 +11,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForQuestionAnswering.from_pretrained(model_name)
 
 # Inputs
-question = "Кои са най-големият град?"
+question = "Кой е най-големият град?"
 # question = "Кои са най-големите градове?"
 # question = "Кои са най-големите градове в България?"
 # question = "Каква е площта на България?"

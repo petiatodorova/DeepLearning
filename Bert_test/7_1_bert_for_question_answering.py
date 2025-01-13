@@ -14,10 +14,11 @@ This notebook explores using the BERT (Bidirectional Encoder Representations fro
 
 Before we start, we need to import the necessary libraries to handle data processing, modeling, and visualization.
 """
-
+"""
 !pip install transformers[torch]==4.38.2
 !pip install datasets===2.13.1
 !pip install plotly
+"""
 
 import torch
 from transformers import (
