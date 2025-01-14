@@ -9,7 +9,11 @@ https://www.youtube.com/watch?v=1y2TohQdNbo
 
 C:\Users\Owner\OneDrive\Desktop\DeepLearning\EmbeddingModel
 
+https://huggingface.co/rmihaylov/roberta-base-nli-stsb-bg
+
 https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+
+sentence-transformers/paraphrase-multilingual-mpnet-base-v2
 
 from sentence_transformers import SentenceTransformer
 
