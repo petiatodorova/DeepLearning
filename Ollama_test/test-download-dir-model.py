@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 import os
 
 # Define the directory to save the model
-save_path = r"C:\Users\Owner\OneDrive\Desktop\DeepLearning\EmbeddingModel"
+save_path = r"C:\Users\Owner\OneDrive\Desktop\Models"
 
 # Create the directory if it doesn't exist
 os.makedirs(save_path, exist_ok=True)
