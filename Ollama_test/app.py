@@ -50,7 +50,7 @@ def process_document(uploaded_file: UploadedFile) -> list[Document]:
         docs = loader.load()
 
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size=500,
+            chunk_size=400,
             chunk_overlap=100,
             separators=["\n\n", "\n", ".", "?", "!", " ", ""],
         )
@@ -101,6 +101,10 @@ def add_to_vector_collection(all_splits: list[Document], file_name: str):
         ChromaDBError: If there are issues upserting documents to the collection
     """
     collection = get_vector_collection()
+
+    # Clean the existing data in the collection (if supported by the collection object)
+    # collection.delete() 
+
     documents, metadatas, ids = [], [], []
 
     for idx, split in enumerate(all_splits):

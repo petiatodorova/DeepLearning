@@ -1,9 +1,13 @@
 Model:
 sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 
+C:\Users\Owner\.cache
+
 ollama pull paraphrase-multilingual
 
 https://www.youtube.com/watch?v=1y2TohQdNbo
+
+C:\Users\Owner\OneDrive\Desktop\DeepLearning\EmbeddingModel
 
 https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
 
