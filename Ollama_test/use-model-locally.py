@@ -1,7 +1,7 @@
 from sentence_transformers import SentenceTransformer
 
 # Path to the local directory where the model is saved
-local_model_path = r"C:\Users\Owner\OneDrive\Desktop\Models"
+local_model_path = r"C:\Users\Owner\OneDrive\Desktop\Models\MiniLM12"
 
 # Load the model
 model = SentenceTransformer(local_model_path)

@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 import os
 
 # Define the directory to save the model
-save_path = r"C:\Users\Owner\OneDrive\Desktop\Models"
+save_path = r"C:\Users\Owner\OneDrive\Desktop\MiniLM12"
 
 # Create the directory if it doesn't exist
 os.makedirs(save_path, exist_ok=True)
